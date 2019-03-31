@@ -1,0 +1,27 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SpitItAll</title>
+    <link rel="stylesheet" href="{% static 'styles.css'%}">
+    <link rel="stylesheet" href="{% static 'nav.css'%}">
+    <link rel="stylesheet" href="{% static 'post/post_list.css'%}">
+    
+  </head>
+  <body>
+    <div class="container">
+        {% include 'inc/navbar.html' %}
+        
+        {% block content %}
+        {% endblock %}
+        
+        
+        {% include 'inc/footer.html' %}
+
+    </div>
+
+  </body>
+</html>

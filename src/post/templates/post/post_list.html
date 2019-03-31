@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<main>
+    <div class="object_list_area">
+        {% for obj in object_list %}
+      
+            <div class="obj-div">
+                <div class="obj-img-div" style="background-image:url({{obj.image.url}})">
+                    {% comment %} <img src= {{obj.image.url}}/> {% endcomment %}
+                </div>
+                <div class="obj-details-div">
+                    <div class="obj-title-div">
+                        {{ obj.title}}
+                    </div>
+                    <div class="obj-body-div">
+                        {{ obj.body }}
+                    </div>
+                </div>
+            </div>
+            
+        {% endfor %}
+    </div>
+</main>
+{% endblock %}

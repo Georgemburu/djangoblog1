@@ -1,0 +1,23 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    background-color: grey;
+}
+.container {
+    width: 90vw;
+    margin: auto;
+    
+}
+main {
+    background: #0f1126;
+
+    
+}
+footer {
+    margin-top: 10px;
+}

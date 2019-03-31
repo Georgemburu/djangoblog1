@@ -1,0 +1,31 @@
+header {
+    background-color: #17ab94;
+    padding-top: 2%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #141414;
+    padding: 0 3%;
+}
+nav >div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+nav a {
+    color: rgb(231, 224, 224);
+    padding: 2% 0;
+    text-decoration: none;
+    margin-top: 1%; 
+}
+nav a:hover {
+    color: white;
+    background-color: #17ab94;
+    border-radius: 5px;
+}
+.active {
+    color: white;
+    background-color: #17ab94;
+    border-radius: 5px;
+}
